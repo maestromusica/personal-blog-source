@@ -36,6 +36,8 @@ plugins:
   - jekyll-feed
   - jekyll-figure
 
+permalink: /:title/
+
 # Theme settings: plainwhite
 plainwhite:
   tagline: |
@@ -58,6 +60,8 @@ plainwhite:
   disqus_shortname: games
     
   date_format: "%b %-d, %Y"
+
+  analytics_id: "UA-75056128-2"
 
 
 show_excerpts: true
