@@ -8,6 +8,8 @@ $smallMobileW: 480px;
 $bigScreenW: 1600px;
 $leftWidth: 220px;
 
+$figure-top-bottom-margin: 30px;
+
 *,
 *:before,
 *:after {
@@ -22,6 +24,33 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+figure {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: $figure-top-bottom-margin;
+  margin-bottom: $figure-top-bottom-margin;
+
+  img {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  figcaption {
+    margin-top: -23px;
+    
+    color: #444;
+    font-style: italic;
+    padding: 0 10px 0 10px;
+    max-width: 80%;
+    text-align: center;
+
+    margin: 0 auto;
+  }
+
+}
+
 
 img,
 embed,
@@ -46,9 +75,11 @@ main {
   display: flex;
   height: 100%;
 
+  max-width: 1200px;
+
   @media screen and (min-width: $bigScreenW) {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1200px;
   }
   @media screen and (max-width: 1280px) {
     margin: 0 75px;

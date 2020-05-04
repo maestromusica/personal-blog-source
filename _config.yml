@@ -30,11 +30,13 @@ github_username:  maestromusica
 
 # Build settings
 # theme: minima
-theme: plainwhite
-remote_theme: thelehhman/plainwhite-jekyll
+# theme: plainwhite
+# remote_theme: thelehhman/plainwhite-jekyll
 plugins:
   - jekyll-feed
   - jekyll-figure
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 permalink: /:title/
 
@@ -48,8 +50,8 @@ plainwhite:
   navigation:
     - title: Blog
       url: "/"
-    - title: Resume
-      url: "/resume"
+    - title: About
+      url: "/about"
 
   social_links:
     twitter: lukdomanski
